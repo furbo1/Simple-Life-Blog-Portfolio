@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    // display: flex;
+    // flex-direction: column;
+    line-height: 1;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #139be4;
+    font-size: .75rem;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+
+/* =================
+Layout
+================= */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    header {
+        text-align: center;
+    }
+}
+
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+.largeImg {
+    max-height: 150px;
+    margin-bottom: 0.5rem;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.verticalLarge {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.verticalSmall {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    line-height: 1.2;
+    padding: 5px;
+}
+
+h1 {
+    margin: 0.5rem;
+}
+
+h2,
+h3,
+h4,
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    color: #143774;
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #1792d2;
+}
+
+h4:hover,
+h4:focus {
+    color: #143774;
+    cursor: pointer;
+}
+
+h3:hover,
+h3:focus {
+    color: #1792d2;
+    cursor: pointer;
+}
+
+h2 {
+    text-decoration: underline #1792d2;
+    color: #143774;
+}
+
+#aboutMe {
+    border-bottom: 30px;
+}
+
+.section1Text {
+    line-height: 1.5;
+}
+
+.vert {
+    padding: 0.5rem;
+    margin: 0 auto;
+    border: 0.5rem solid lightgray;
+}
+
+.empty {
+    height: 15px;
+    background: white;
+}
+
+footer h5 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    opacity: 0.6;
+}
+
+footer h5,
+p {
+    opacity: 0.6;
+}
+
+.copy {
+    font-size: 0.6rem;
+}
+
+@media (min-width:675px) {
+    .vertical {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    .verticalLarge {
+        width: 70%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    .verticalSmall {
+        width: 25%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        padding: 20px;
+        padding-top: 0;
+        padding-right: 0;
+    }
+    .horizontal {
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .horizontalImg {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        padding: 10px 0;
+        min-width: 220px;
+        min-height: 190px;
+    }
+    img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 200px;
+    }
+    .largeImg {
+        max-height: 300px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+#img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: 220px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+    background: #143774;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
